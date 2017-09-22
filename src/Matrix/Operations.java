@@ -26,7 +26,29 @@ public class Operations {
             return result;
         }
 
-
-
     }
+    
+    public static Matrix Transpose(Matrix m)
+    {
+    	Matrix t = new Matrix(m.c, m.r);
+    	
+    	for (int i = 0; i < t.r; i++) {
+        	for (int j = 0; j < t.c; j++) {
+        		t.values[i][j] = m.values[j][i];
+        		
+        	}	
+    	}
+    	t.isDefined=true;
+    	return t;
+    }
+    
+	public Matrix multiplyMatrices(Matrix m1, Matrix m2)
+	{
+		if (m1.c != m2.r)
+		{
+			
+		}
+		return new Matrix(2,2);
+	}
+    
 }
