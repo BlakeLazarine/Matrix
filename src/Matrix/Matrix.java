@@ -15,6 +15,13 @@ public class Matrix {
         isDefined = false;
         values = new int[r][c];
     }
+    
+    public Matrix(int rows, int columns, int[][] v){
+        c = columns;
+        r = rows;
+        isDefined = true;
+        values = v;
+    }
 
 
     public void defineMatrix() {
@@ -42,5 +49,3 @@ public class Matrix {
     }
 
 }
-
-
